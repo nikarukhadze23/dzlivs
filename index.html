@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Calculator app</title>
+</head>
+
+<body>
+  <main>
+    <div class="top">
+      <div class="header">
+        <p>calc</p>
+        <div class="switchBox">
+          <p>THEME</p>
+          <div class="switch">
+            <div class="themeSelected">
+              <label>1</label>
+              <label>2</label>
+              <label>3</label>
+            </div>
+            <input type="range" name="themes" id="themes" onchange="themeSelector()" min="1" step="1" max="3" value="1">
+          </div>
+        </div>
+      </div>
+
+      <div class="display">
+        <p class="result">0</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="seven"><button class="key" id="seven" value="7">7</button></div>
+      <div class="eight"><button class="key" id="eight" value="8">8</button></div>
+      <div class="nine"><button class="key" id="nine" value="9">9</button></div>
+      <div class="delete"><button id="del" value="del">DEL</button></div>
+      <div class="four"><button class="key" id="four" value="4">4</button></div>
+      <div class="five"><button class="key" id="five" value="5">5</button></div>
+      <div class="six"><button class="key" id="six" value="6">6</button></div>
+      <div class="plus"><button class="key" id="plus" value="+">+</button></div>
+      <div class="one"><button class="key" id="one" value="1">1</button></div>
+      <div class="two"><button class="key" id="two" value="2">2</button></div>
+      <div class="three"><button class="key" id="three" value="3">3</button></div>
+      <div class="minus"><button class="key" id="minus" value="-">-</button></div>
+      <div class="dot"><button class="key" id="dot" value=".">.</button></div>
+      <div class="zero"><button class="key" id="zero" value="0">0</button></div>
+      <div class="divide"><button class="key" id="divide" value="/">/</button></div>
+      <div class="multiply"><button class="key" id="multiply" value="*">x</button></div>
+      <div class="reset"><button id="reset" value="reset">RESET</button></div>
+      <div class="equal"><button class="equal" id="equal" value="=">=</button></div>
+    </div>
+  </main>
+ <script src="app.js"></script>
+
+</body>
+
+</html>
